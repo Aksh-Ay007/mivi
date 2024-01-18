@@ -1,0 +1,183 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul, 
+li{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+nav {
+    z-index: 1;
+    justify-content: space-around;
+    position: fixed;
+}
+
+
+.navbar {
+    background-color: rgb(52, 51, 51);
+}
+
+.navbar a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #18d26e;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.container1 {
+    background-color: rgb(52, 51, 51);
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+/* carosel  */
+.c-item {
+    height: auto;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+}
+
+.word {
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    font-style:inherit;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.word h1{
+    text-decoration: underline;
+}
+
+
+.card {
+    background-color: lightgray;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.gallery {
+    padding: 80px 0;
+
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+}
+
+.h-2{
+    height: 10px !important;
+}
+
+.product-section{
+    overflow: hidden;
+    width: 100vw;
+}
+
+.vertical-scroll-container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.name,.price{
+    font-weight: bold;
+}
+
+.org-price{
+    text-decoration: line-through;
+    opacity:0.7;
+}
+
+.product{
+    background-color:white;
+    width: 500px;
+    border-radius:20px;
+    border: 3px solid gray;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.product img{
+    height: 400px;
+}
+@media (max-width:700px) {
+    .product{
+        width:80vw;
+    }
+}
+
+/* deal */
+
+.container-Deal{
+    height: min-content;
+    display: flex;
+    align-items: center;
+  }
+  
+  .parent{
+    height: 150px;
+    position: relative;
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(52, 51, 51);
+
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .child{
+    --height: 300px;
+    position: absolute;
+    height: var(--height);
+    width: 400px;
+    background-color:rgb(207, 207, 207);
+    right: 20%;
+    top: calc(var(--height) / 4 * -1);
+  }
+
+  .color{
+    display: flex;
+    gap: 10px;
+  }
+  
+
+  .color div{
+    --height: 20px;
+    width: var(--height);
+    height: var(--height);
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
